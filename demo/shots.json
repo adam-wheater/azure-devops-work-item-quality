@@ -1,0 +1,21 @@
+[
+  {
+    "name": "overview",
+    "steps": [{ "click": "role=button[name=/Scan Work Items/]" }, { "waitFor": "text=Scan complete" }]
+  },
+  {
+    "name": "violations",
+    "steps": [{ "click": "role=button[name=/Scan Work Items/]" }, { "waitFor": "text=Scan complete" }],
+    "selector": ".ax-card:has(.ax-card__title:text-is('Violations'))"
+  },
+  {
+    "name": "sprints",
+    "steps": [{ "click": "role=button[name=/Scan Work Items/]" }, { "waitFor": "text=Scan complete" }],
+    "selector": ".ax-card:has(.ax-card__title:text-is('Sprint Summary'))"
+  },
+  {
+    "name": "settings",
+    "steps": [{ "click": "role=button[name=/Settings/]" }, { "wait": 300 }],
+    "fullPage": true
+  }
+]
